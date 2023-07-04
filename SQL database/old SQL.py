@@ -1,7 +1,7 @@
 import sqlite3
 
 def Connect(Connection_Query,Connection_Query2):
-    conn = sqlite3.connect('test.db')    
+    conn = sqlite3.connect('test.db')
     with conn:
         cur = conn.cursor()
         cur.execute(Connection_Query)
@@ -10,7 +10,7 @@ def Connect(Connection_Query,Connection_Query2):
     conn.close()
 
 
-filelist = ('information.dox','Hello.txt','myImage.png','myMovie.png','World.txt,','data.pdf','myPhoto.jpg')    
+filelist = ('information.dox','Hello.txt','myImage.png','myMovie.png','World.txt,','data.pdf','myPhoto.jpg')
 string1 = str(filelist[0])
 string2 = str(filelist[1])
 string3 = str(filelist[2])
@@ -31,4 +31,3 @@ Connect(Connection_Query=("CREATE TABLE IF NOT EXISTS tbl_files(\
             (string5),\
             (string6),\
             (string7),))
-            
