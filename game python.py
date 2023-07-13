@@ -15,7 +15,7 @@ def describe_game(name):
                     print("\nIn this game, you will be greated \nby several different people. \nYou can choose to be nice or mean")
                     print("but at the end of the game fate \n will be sealed by your actions")
                     stop = False
-        
+    return name
     
 def nice_mean(nice,mean,name):
     stop = True
@@ -73,20 +73,6 @@ def reset(nice,mean,name):
 if __name__ == "__main__":
     start()
             
-def describe_game(name):
-    if name != "":
-        print("\nThank you for you playing again, {}!".format(name))
-    else:
-        stop = True
-        while stop:
-            if name == "":
-                name = input("\nThank you for playing again, {}!".format(name))
-                if name != "":
-                    print("\nWelcome, {}!".format(name))
-                    print("\nIn this game, you will be greated \nby several people. \nYou can choose to be nice or mean")
-                    print("but at the end of the game your fate \n will be sealed by your actions")
-                    stop = False
-        return name;
-                    
+
             
             
