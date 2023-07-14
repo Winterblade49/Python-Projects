@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import *
-import webbrowser
+
 
 win_size_num_X = 900 #enter win size X
 win_size_num_Y = 400 #enter ein size Y 
