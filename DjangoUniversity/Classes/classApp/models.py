@@ -1,9 +1,9 @@
 from django.db import models
 
-# Create model of Univerity classes
+    # Create model of Univerity classes
 class UniversityClasses(models.Model):
-    title = models.CharField(max_length=60, default="", blank=true, null=False)
-    course_number = models.IntigratedField(default="", blank=true, null=False)
+    title = models.CharField(max_length=60, default="", blank=True, null=False)
+    course_number = models.IntegerField(default="", blank=True, null=False)
     instructor_name = models.CharField(max_length=60, default="", blank=True, null=True)
     duration = models.FloatField(null=True, blank=True, default=None)
 
