@@ -1,0 +1,22 @@
+from django.db import models
+
+# Create model of Univerity classes
+class UniversityClasses(models.Model):
+    title = models.CharField(max_length=60, default="", blank=true, null=False)
+    course_number = models.IntigratedField(default="", blank=true, null=False)
+    instructor_name = models.CharField(max_length=60, default="", blank=True, null=True)
+    duration = models.FloatField(null=True, blank=True, default=None)
+
+    #Creates model manager
+    object = models.Manager()
+
+    #Displays the object output values in the form of a string
+    def __str__(self):
+        # Returns the input value of the title and the instructor name
+        # field as a tuple to display in the browser instedof the default titles
+        display_course = '{0.title}: {instructor_name}'
+        return display_course.format(self)
+    # Remove added 's' that django adds to the model name in the browser display
+    class Meta:
+        verbose_name_plural = "University Classes"
+
