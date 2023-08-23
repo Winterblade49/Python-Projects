@@ -22,7 +22,7 @@ def create_account(request):
     content = {'form': form}
     return render( request,'checkbook/CreateNewAccount.html',content)
 # this function will render Balance page when requested
-def balance(request):
+def balance(request,pk):
     account = get_object_or_404(Account, pk=pk)
     transactions = Transaction.Transactions.filter(account=pk)
     current_total = account.initial_deposit
@@ -35,7 +35,7 @@ def balance(request):
             current_total -= t.amount
             table_contents.update({t: current_total})
     content = {'account': account, 'table_contents': table_contents, 'balance':current_total}
-    return render(request, 'checkbook/BalanceSheet.html')
+    return render(request, 'checkbook/BalanceSheet.html',content)
 # this function will render trasaction page when requested
 def transaction(request):
     form = TransactionForm(data=request.POST or None)

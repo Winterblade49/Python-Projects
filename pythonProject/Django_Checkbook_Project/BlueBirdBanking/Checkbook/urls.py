@@ -1,7 +1,5 @@
-from django.shortcuts import  render, redirect, get_object_or_404
-from .forms import  AccountForm, TransactionForm
-from .models import  Account, Transaction
-
+from django.urls import path
+from . import views
 
 urlpatterns = [
         path('',views.home, name='index'),
