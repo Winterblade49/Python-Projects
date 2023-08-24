@@ -9,9 +9,9 @@ these are basic projects written in Python. They use various modules such as tki
 - object orented programming
 
 ## Tik Tac to 
--a basic tik tac to program 
+- a basic tik tac to program 
 ## Django Basic Website
--a basic websight made with django
+- a basic websight made with django
 ## Test
--test was a test program just me playing around
+- test was a test program just me playing around
 
