@@ -3,7 +3,7 @@ these are basic projects written in Python. They use various modules such as tki
 
 ## Projects
 - tik tac to
-- Django Basic Website
+- Django Basic Website srcset = https://github.com/Winterblade49/Python-Projects/tree/main/pythonProject/Django_Checkbook_Project
 - test
 - classes
 - object orented programming
